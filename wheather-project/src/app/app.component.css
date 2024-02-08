@@ -1,0 +1,106 @@
+body{
+   background-image: url('https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+   background-size: cover;
+}
+.mainContainer{
+    margin: auto;
+    height: 400px;
+    width: 500px;
+    border: 2px solid black;
+    padding: 10px;
+    color: white;
+    position: relative;
+    top: 40px;
+    backdrop-filter: blur(10px);
+}
+  input{
+height: 30px;
+width: 250px;
+border-radius: 20px;
+ position: relative;
+ left: 530px;
+ top: 30px;
+ box-shadow: 5px 10px 20px black;
+}
+  button{
+    position: relative;
+    left:610px ;
+    margin-top: 10px;
+    height:25px;
+    width: 100px;
+    border-radius: 2px;
+    top: 30px;
+    box-shadow: 5px 10px 20px black;
+}
+  button:hover{
+    background-color: aqua;
+}
+ .firstBox{
+    background-color: rgba(8, 3, 44, 0.356);
+    padding: 15px;
+    height: 170px;
+}
+.time{
+    font-size: 25px;
+}
+.temprature{
+    font-size: 60px;
+    position: relative;
+    left:200px;
+    
+     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.temprature span{
+    font-size: 22px;
+    position: relative;
+    bottom: 25px;
+    right: 8px;
+    
+}
+.city{
+    position: relative;
+    left: 200px;
+    color: rgb(47, 241, 255);
+    font-size: 18px;
+}
+.logo{
+     position: relative;
+     bottom:150px;
+     left: 380px;
+}
+.minMax{
+    position: relative;
+    left: 400px;bottom:130px;
+}
+.icon1{
+    rotate: -90deg;
+    position: relative;
+    top: 5px
+}
+.icon2{
+    rotate: 90deg;
+    position: relative;
+    top: 5px;
+}
+.wind{
+    position: relative;
+    bottom: 190px;
+}
+.mixBox{
+display: flex;
+ gap: 20px;
+}
+.secondBox{
+    margin-top: 20px;
+    background-color: rgba(8, 3, 44, 0.438);
+    width: 200px;
+    padding: 20px;
+    height: 130px;
+}
+.thirdBox{
+    margin-top: 20px;
+    background-color: rgba(8, 3, 44, 0.432);
+    width: 200px;
+    padding: 20px;
+    height: 130px;
+}
