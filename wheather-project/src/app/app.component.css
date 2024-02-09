@@ -2,6 +2,38 @@ body{
    background-image: url('https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
    background-size: cover;
 }
+.header{
+    background-color: rgb(6, 7, 63);
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+.header h1{
+     position: relative;
+     top: 8px;
+     right: 10px;
+      
+}
+.search{
+    position: relative;
+    left: 160px;
+    display: flex;
+    align-items: center;
+}
+.search input{
+    height: 27px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1 px solid black;
+}
+.search button{
+    height: 28px;
+    width: 80px;
+}
+  :placeholder-shown{
+    font-size: 16px;
+}
 .mainContainer{
     margin: auto;
     height: 400px;
@@ -13,7 +45,7 @@ body{
     top: 40px;
     backdrop-filter: blur(10px);
 }
-  input{
+  /* input{
 height: 30px;
 width: 250px;
 border-radius: 20px;
@@ -21,8 +53,8 @@ border-radius: 20px;
  left: 530px;
  top: 30px;
  box-shadow: 5px 10px 20px black;
-}
-  button{
+} */
+  /* button{
     position: relative;
     left:610px ;
     margin-top: 10px;
@@ -31,8 +63,9 @@ border-radius: 20px;
     border-radius: 2px;
     top: 30px;
     box-shadow: 5px 10px 20px black;
-}
+} */
   button:hover{
+    height:40px;
     background-color: aqua;
 }
  .firstBox{

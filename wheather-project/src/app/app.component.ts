@@ -21,6 +21,7 @@ boxHide:boolean=false
  sys:any=''
  wind:any=''
  base:any=''
+
   showData(){
     this.apiCall.getApiCAll(this.search).subscribe(res=>{
        this.wheatherData=res
