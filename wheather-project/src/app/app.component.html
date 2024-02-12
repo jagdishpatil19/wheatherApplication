@@ -1,55 +1,51 @@
 <body>
   <div class="header">
-    <img style="height: 70px;" src="assets/weather icon.png" alt="">
+    <img style="height: 70px" src="assets/weather icon.png" alt="" />
     <h1><b>Weather Application</b></h1>
-   <div class="search">
-    <input type="text" [(ngModel)]="search" placeholder="search city name" > <button mat-raised-button (click)="showData()">Show</button> 
-   </div>
+    <div class="search">
+      <input type="text" [(ngModel)]="search" placeholder="search city name" />
+      <button mat-raised-button (click)="showData()">Show</button>
+    </div>
   </div>
- 
- 
 
-<div class="mainContainer" *ngIf="boxHide">
-  
-  <div class="firstBox">
-    
-    <p>{{date}}</p>
-    <span class="time"><b>{{time}}</b></span>
-    <p class="temprature"> {{temprature}} <span><b>°C</b></span></p>
-    <p class="city"> <b> {{cityName}}</b></p>
-    <div class="logo">
-      <img style="height: 100px;" src="assets/weather.png" alt="">
-    </div>
-  
-    <div class="minMax">
-      <p> <mat-icon class="icon1">arrow_right_alt</mat-icon>  {{main.temp_max}}°C</p>
-   <p>  <mat-icon class="icon2">arrow_right_alt</mat-icon> {{main.temp_min}}°C</p>
-    </div>
-    <div class="wind">
-      <p>Wind deg : {{wind.deg}}°C</p>
-      <p>Wind Speed : {{wind.speed}}</p>
-    </div>
-  </div>
-    
-   <div class="mixBox">
-   <div class="secondBox">
-    <p> <b>City : {{cityName}}</b>
-      <p>  Temprature : {{main.feels_like}}</p>
-      <p> humidity : {{main.humidity}}%</p>
+  <div class="mainContainer" *ngIf="boxHide">
+    <div class="firstBox">
+      <p>{{ date }}</p>
+      <span class="time"><b>{{ time }}</b></span>
+      <p class="temprature">{{ temprature }} <span><b>°C</b></span></p>
+      <p class="city"><b> {{ cityName }}</b></p>
       
-      <p> temp_max : {{main.temp_max}}°C</p>
-      <p> temp_min : {{main.temp_min}}°C</p>
-      
+      <div class="logo">
+        <img style="height: 100px" src="assets/weather.png" alt="" />
+      </div>
+
+      <div class="minMax">
+        <p><mat-icon class="icon1">arrow_right_alt</mat-icon>{{ main.temp_max }}°C</p>
+        <p><mat-icon class="icon2">arrow_right_alt</mat-icon> {{ main.temp_min }}°C</p>
+      </div>
+
+      <div class="wind">
+        <p>Wind deg : {{ wind.deg }}°C</p>
+        <p>Wind Speed : {{ wind.speed }}</p>
+      </div>
     </div>
-    
-    <div class="thirdBox">
-     <p> <b>Country : {{sys.country}}</b></p>
-    <p> Sunrise : {{sys.sunrise}}</p>
-    <p> Sunset : {{sys.sunset}}</p>
-    <p> Pressure : {{main.pressure}}</p>
-    <p>  Base : {{base}}</p>
-   </div>
+
+    <div class="mixBox">
+      <div class="secondBox">
+        <p><b>City : {{ cityName }}</b></p>
+        <p>Temprature : {{ temprature }}°C</p>
+        <p>humidity : {{ main.humidity }}%</p>
+        <p>temp_max : {{ main.temp_max }}°C</p>
+        <p>temp_min : {{ main.temp_min }}°C</p>
+      </div>
+
+      <div class="thirdBox">
+        <p><b>Country : {{ sys.country }}</b></p>
+        <p>Sunrise : {{ sys.sunrise }}</p>
+        <p>Sunset : {{ sys.sunset }}</p>
+        <p>Pressure : {{ main.pressure }}</p>
+        <p>Base : {{ base }}</p>
+      </div>
+    </div>
   </div>
-  </div>
- 
 </body>
