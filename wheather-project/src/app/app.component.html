@@ -3,11 +3,12 @@
     <img style="height: 70px" src="assets/weather icon.png" alt="" />
     <h1><b>Weather Application</b></h1>
     <div class="search">
-      <input type="text" [(ngModel)]="search" placeholder="search city name" />
-      <button mat-raised-button (click)="showData()">Show</button>
+      <input type="text" #search placeholder="search city name" />
+      <button mat-raised-button (click)="showData(search.value)">Show</button>
     </div>
   </div>
 
+  <marquee  *ngIf="marque" behavior="" direction="">Enter your cicty name</marquee>
   <div class="mainContainer" *ngIf="boxHide">
     <div class="firstBox">
       <p>{{ date }}</p>
