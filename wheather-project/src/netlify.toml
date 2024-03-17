@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "ng build --prod"
   publish = "dist/wheather-project"
 [[redirects]]
   from = "/*"
